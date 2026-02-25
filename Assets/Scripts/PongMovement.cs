@@ -22,6 +22,7 @@ public class PongMovement : MonoBehaviour
     {
         if (transform.position.x == 0 && transform.position.y == 0)
         {
+            ChangeDirection();
             rb.velocity = new Vector2(directionX * moveSpeed, directionY * moveSpeed);
         }
     }
